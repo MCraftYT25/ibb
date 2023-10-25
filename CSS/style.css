@@ -1,0 +1,148 @@
+:root {
+    --main-color: rgb(253,217,141);
+    --second-color: #333;
+    --bg-color: rgb(253,217,141);
+    --font-color: black;
+    --font-2nd-color: #f2a86f;
+    --mate-black: #28282B;
+}
+/*-------------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+}
+/*-------------------------------------------------------------*/
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('../files/fonts/Ubuntu-Regular.ttf');
+}
+@font-face {
+    font-family: 'Apple';
+    src: url('../files/fonts/SFUIText-Regular.otf');
+}
+@font-face {
+    font-family: 'Apple-bold';
+    src: url('../files/fonts/SFUIText-Bold.otf');
+}
+@font-face {
+    font-family: 'Apple-heavy';
+    src: url('../files/fonts/SFUIText-Heavy.otf');
+}
+@font-face {
+    font-family: 'Apple-semi-bold';
+    src: url('../files/fonts/SFUIText-Semibold.otf');
+}
+@font-face {
+    font-family: 'Apple-light';
+    src: url('../files/fonts/SFUIText-Light.otf');
+}
+/*-------------------------------------------------------------*/
+body {
+    font-family: 'Apple';
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Apple';
+    /*background-color: #28282B;*/
+    background-color: rgb(18,18,18);
+    background-color: black;
+}
+/*-------------------------------------------------------------*/
+header {
+    text-align: center;
+    padding: 0.5em;
+    background-color: black;
+}
+h1 {
+    color: white;
+    font-family: 'Apple-semi-bold';
+    color: rgb(160,156,143);
+    /*color: rgb(245,245,248);*/
+}
+/*-------------------------------------------------------------*/
+#main-content {
+    max-width: 700px;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 0.5em;
+    border-radius: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    color: rgb(160,156,143);
+}
+/*-------------------------------------------------------------*/
+footer {
+    text-align: center;
+    padding: 0.5em;
+    background-color: black;
+    color: white;
+    font-family: 'Apple';
+    font-size: 0.8em;
+    color: rgb(142,142,142);
+}
+/*-------------------------------------------------------------*/
+a {
+    text-decoration: none;
+}
+li {
+    list-style-type: none;
+}
+.bold {
+    font-weight: bold;
+}
+
+/*-------------------------------------------------------------*/
+.container {
+    padding: 0.2em;
+}
+/*-------------------------------------------------------------*/
+.follows {
+    background-color: rgb(18,18,18);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    color: rgb(249,249,249);
+}
+.follows .f-count {
+    font-size: 2em;
+    font-family: 'Apple-bold';
+}
+.follows .f-text {
+    font-size: 0.8em;
+    color: lightgray;
+    color: rgb(155,155,155);
+}
+/*-------------------------------------------------------------*/
+.update {
+    background-color: rgb(18,18,18);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    color: rgb(249,249,249);
+    display: flex;
+    flex-direction: row;
+}
+.update .u-version {
+    font-size: 2em;
+    font-family: 'Apple-bold';
+}
+.update .u-date {
+    font-size: 0.8em;
+    color: lightgray;
+    color: rgb(155,155,155);
+}
+.u-desc {
+    padding-left: 2em;
+    color: rgb(155,155,155);
+}
+/*-------------------------------------------------------------*/
+.section-title {
+    background-color: rgb(18,18,18);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    color: rgb(249,249,249);
+}
+.section-title h2 {
+    font-family: 'Apple-bold';
+    font-size: 2.5em;
+}
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
