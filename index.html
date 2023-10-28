@@ -5,14 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/style-lingua.css">
-    <title></title>
+    <link rel="icon" type="image/x-icon" href="files/img/ibb-max.jpg">
+    <title>iBeBetter</title>
 </head>
 <body>
     <header id="header">
         <h1>iBeBetter</h1>
     </header>
     <div id="main-content">
-        <div>21331323 sdjklsalkdjlakjsl </div>
+        <div class="container">
+            <nav>
+                <a href="">Quotes</a>
+                <a href="">Updates</a>
+                <a href="">Quotes</a>
+                <a href="">Quotes</a>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="section-title">
+                <h2>Quotes</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="quote">
+                <p>Remember that people who are trying to destroy you are already below you.</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="quote">
+                <p>Remember that people who are trying to destroy you are already below you.</p>
+                <p class="stats">2023-10-28</p>
+            </div>
+        </div>
+        <div class="container">
+            <div class="quote">
+                <p>Remember that people who are trying to destroy you are already below you.</p>
+                <p class="stats">2023-10-28</p>
+            </div>
+        </div>
         <div class="container">
             <div class="follows">
                 <p class="f-count">36000</p>
@@ -46,9 +76,12 @@
             <div class="update">
                 <div class="u-vr-dt">
                     <p class="u-version">V0.2</p>
-                    <p class="u-date">2023-10-25</p>
+                    <p class="u-date">2023-10-28</p>
                 </div>
                 <div class="u-desc">
+                    <p>+ Quotes: section, quotes.txt</p>
+                    <p>+ nav menu</p>
+                    <p>+ favicon "iBeBetter MAX"</p>
                     <p>+ </p>
                 </div>
             </div>
@@ -66,9 +99,34 @@
                 </div>
             </div>
         </div>
-        
+        <div class="container">
+            <h2>Quotes - obsługa</h2>
+            <input type="file" id="myFile">
+        </div>
+        <div id="quotes2"></div>
+        <div class="container"><div class="quote"><p>Remember that people who are trying to destroy you are already below you. </p><p class="stats"> 2023-10-28 </p></div></div><div class="container"><div class="quote"><p>Nie okazuj emocji nawet jeśli sytuacja jest poważna. </p><p class="stats"> 2023-10-28 </p></div></div><div class="container"><div class="quote"><p>Otwieraj usta tylko wtedy, gdy ktoś do ciebie mówi bezpośrednio. Ignoruj innych jakby byli nieistotni. </p><p class="stats"> 2023-10-28 </p></div></div><div class="container"><div class="quote"><p>Zachowuj się tak, jakby nic nie było dla Ciebie ważne, nawet jeśli świat wokół Ciebie się rozpada. </p><p class="stats"> 2023-10-28 </p></div></div><div class="container"><div class="quote"><p>Nie blokuj nikogo, nawet jeśli Cię denerwuje. Niech te owady brzęczą i marnują czas. </p><p class="stats"> 2023-10-28 </p></div></div><div class="container"><div class="quote"><p>Nie trać czasu na wyjaśnianie rzeczy dwa razy. Jeśli ktoś nie zrozumie Twojego punktu widzenia, pozwól mu utonąć we własnej niewiedzy. </p><p class="stats"> 2023-10-28 </p></div></div><div class="container"><div class="quote"><p>Jeśli chcesz, aby ktoś Cię słuchał, zacznij rozmowę, od "Tak naprawdę nie powinienem Ci tego mówić". </p><p class="stats"> 2023-10-28 </p></div></div><div class="container"><div class="quote"><p>Bądź szczęśliwy, a inni będą chcieli być szczęśliwi razem z Tobą. Ludzie kochają szczęśliwych ludzi, bo sami chcą być szczęśliwi. </p><p class="stats"> 2023-10-28 </p></div></div><div class="container"><div class="quote"><p>Nigdy nie pytaj kogoś czy mówi prawdę. Uczciwa osoba poczuje się urażona. Kłamca po prostu będzie Cię bardziej okłamywać. </p><p class="stats"> 2023-10-28 </p></div></div><div class="container"><div class="quote"><p>80% rozmów w życiu, które porwadzimy to rozmowy z samym sobą. Jeśli nauczysz się rozmawiać z samym sobą, nauczysz się również rozmawiać z innymi. </p><p class="stats"> 2023-10-28 </p></div></div><div class="container"><div class="quote"><p>Jak rozpoznać przyjaciół z którymi nie warto utrzymywać kontaktu: Mówią tylko o Twojej przeszłości, nigdy o przyszłości. </p><p class="stats"> 2023-10-28 </p></div></div><div class="container"><div class="quote"><p>Idąc czyjąś drogą, nie osiągniesz swoich celów. </p><p class="stats"> 2023-10-28 </p></div></div><div class="container"><div class="quote"><p>Gdy ktoś mówi przepraszam, nie mów "Nie ma za co", powiedz "Dziękuję" i nie zrobi tego ponownie. </p><p class="stats"> 2023-10-28 </p></div></div><div class="container"><div class="quote"><p>Jeśli ktoś próbuje Cię przestraszyć to zaśmiej się z niego. Poczuje się zażenowany. </p><p class="stats">undefined</p></div></div><div class="container"><div class="quote"><p></p><p class="stats">undefined</p></div></div>
     </div>
     <footer id="footer"></footer>
 </body>
 <script src="JS/main-script.js"></script>
+<script>
+    let linie;
+    document.getElementById('myFile').addEventListener('change', function(e) {
+        var file = e.target.files[0];
+        var reader = new FileReader();
+    
+        reader.onload = function(e) {
+            var lines = e.target.result.split('\n');
+            for(var i = 0; i < lines.length; i++) {
+                console.log(lines[i]);
+                var podzielone = lines[i].split("|")
+                var tekst = '<div class="container"><div class="quote"><p>' + podzielone[0] + '</p><p class="stats">' + podzielone[1] + '</p></div></div>';
+                var textNode = document.createTextNode(tekst);
+                document.getElementById("quotes2").appendChild(textNode);
+            }
+        }
+    
+        reader.readAsText(file);   
+    });
+    </script>
 </html>

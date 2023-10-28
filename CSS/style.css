@@ -70,6 +70,20 @@ h1 {
     color: rgb(160,156,143);
 }
 /*-------------------------------------------------------------*/
+nav {
+    padding: 0.5em;
+}
+nav a {
+    text-decoration: none;
+    color: rgb(160,156,143);
+    padding: 0.5em;
+    border-radius: 0.3em;
+}
+nav a:hover {
+    background-color: #28282B;
+    font-family: 'Apple-bold';
+}
+/*-------------------------------------------------------------*/
 footer {
     text-align: center;
     padding: 0.5em;
@@ -89,7 +103,6 @@ li {
 .bold {
     font-weight: bold;
 }
-
 /*-------------------------------------------------------------*/
 .container {
     padding: 0.2em;
@@ -142,7 +155,33 @@ li {
 .section-title h2 {
     font-family: 'Apple-bold';
     font-size: 2.5em;
+    color: rgb(160,156,143);
+}
+/*-------------------------------------------------------------*/
+.quote {
+    background-color: rgb(18,18,18);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    color: rgb(249,249,249);
+}
+/*-------------------------------------------------------------*/
+.stats {
+    font-size: 0.8em;
+    color: rgb(142,142,142);
+    text-align: right;
 }
 /*-------------------------------------------------------------*/
 /*-------------------------------------------------------------*/
+@media screen and (min-width: 200px) {
+    #main-content {
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+}
+@media screen and (min-width: 1050px) {
+    #main-content {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
 /*-------------------------------------------------------------*/
