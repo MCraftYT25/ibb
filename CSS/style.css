@@ -58,6 +58,11 @@ h1 {
     color: rgb(160,156,143);
     /*color: rgb(245,245,248);*/
 }
+header p {
+    color: rgb(155,155,155);
+    text-align: center;
+    font-size: 0.7em;
+}
 /*-------------------------------------------------------------*/
 #main-content {
     max-width: 700px;
@@ -134,7 +139,8 @@ li {
 }
 .update .u-version {
     font-size: 2em;
-    font-family: 'Apple-bold';
+    font-family: 'Apple-heavy';
+    color: rgb(160,156,143);
 }
 .update .u-date {
     font-size: 0.8em;
@@ -144,6 +150,7 @@ li {
 .u-desc {
     padding-left: 2em;
     color: rgb(155,155,155);
+    font-family: 'Apple-light';
 }
 /*-------------------------------------------------------------*/
 .section-title {
@@ -169,7 +176,41 @@ li {
     font-size: 0.8em;
     color: rgb(142,142,142);
     text-align: right;
+    /*font-family: 'Apple-light';*/
 }
+/*-------------------------------------------------------------*/
+.stats-container {
+    background-color: rgb(18,18,18);
+    color: rgb(249,249,249);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: row;
+}
+.stats-container div {
+    width: 50%;
+}
+.stats-container .description {
+    font-size: 0.8em;
+    font-family: 'Apple-semi-bold';
+    color: rgb(142,142,142);
+}
+.stats-container .value {
+    font-size: 2em;
+    font-family: 'Apple-heavy';
+    color: rgb(160,156,143);
+}
+/*-------------------------------------------------------------*/
+.subtitle {
+    font-size: 0.8em;
+    color: rgb(142,142,142);
+    font-family: 'Apple';
+}
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
+/*-------------------------------------------------------------*/
 /*-------------------------------------------------------------*/
 /*-------------------------------------------------------------*/
 @media screen and (min-width: 200px) {
