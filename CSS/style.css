@@ -57,6 +57,10 @@ h1 {
     font-family: 'Apple-semi-bold';
     color: rgb(160,156,143);
     /*color: rgb(245,245,248);*/
+    /*color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: linear-gradient(90deg,#7f796c,#c3c1b4);*/
 }
 header p {
     color: rgb(155,155,155);
@@ -171,6 +175,10 @@ li {
     border-radius: 0.5em;
     color: rgb(249,249,249);
 }
+#quotes .quote {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
 /*-------------------------------------------------------------*/
 .stats {
     font-size: 0.8em;
@@ -207,6 +215,14 @@ li {
     font-family: 'Apple';
 }
 /*-------------------------------------------------------------*/
+.training-plan p {
+    background-color: rgb(18,18,18);
+    color: rgb(249,249,249);
+    border-radius: 0.5em;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+}
 /*-------------------------------------------------------------*/
 /*-------------------------------------------------------------*/
 /*-------------------------------------------------------------*/
